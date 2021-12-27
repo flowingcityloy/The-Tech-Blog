@@ -16,10 +16,10 @@ This application is a CMS-style blog site to assist developers who likes to writ
 * [Questions](#questions)
 
 
+
 ## Installation 
   1. git clone git@github.com:flowingcityloy/The-Tech-Blog.git
   2. npm i
-  3. npm run watch
 
 
 ## Built With
@@ -28,22 +28,25 @@ This application is a CMS-style blog site to assist developers who likes to writ
 * MySQL2
 * Sequelize
 
+
   
 ## Usage 
 The following image demonstrates the web application's appearance and functionality:
 <p><img src=""/></p>
-Please click on the following link for clearer video:
-<p><a href=>Link</a></p>
+
 
 
 ## Website
-[Repository](https://github.com/flowingcityloy/The-Tech-Blog)
+[Repository](https://github.com/flowingcityloy/The-Tech-Blog)<br />
+[Live site](https://flowingcityloy.github.io/The-Tech-Blog/)
+
 
 
 ## Credits
 
 Lydia Loy
     
+
 
 ## Questions
   

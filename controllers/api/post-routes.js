@@ -12,8 +12,8 @@ router.get('/', (req, res) => {
             'id',
             'contents',
             'title',
-            'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id'), 'vote_count']
+            'created_at'
+            
         ],
         include: [
             {
@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    post.findOne({
+    Post.findOne({
         where: {
             id: req.params.id
         },
@@ -46,8 +46,8 @@ router.get('/:id', (req, res) => {
             'id',
             'contents',
             'title',
-            'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id'), 'vote_count']
+            'created_at'
+           
         ],
         include: [
             {

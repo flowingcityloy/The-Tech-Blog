@@ -23,10 +23,15 @@ This application is a CMS-style blog site to assist developers who likes to writ
 
 
 ## Built With
-* node.js
-* express.js
-* MySQL2
-* Sequelize
+  * bcrypt
+  * connect-session-sequelize
+  * dotenv
+  * express
+  * express-handlebars
+  * express-session
+  * mysql2
+  * nodemon
+  * sequelize 
 
 
   
@@ -38,7 +43,7 @@ The following image demonstrates the web application's appearance and functional
 
 ## Website
 [Repository](https://github.com/flowingcityloy/The-Tech-Blog)<br />
-[Live site](https://flowingcityloy.github.io/The-Tech-Blog/)
+[Live site](https://the-tech-blog-ll.herokuapp.com/)
 
 
 
@@ -50,7 +55,7 @@ Lydia Loy
 
 ## Questions
   
-  If you have any questions, please reach out to me at:<br>
+  If you have any questions, please reach me at:<br>
   
   <a href="https://github.com/flowingcityloy">GitHub Link</a><br>
   <a href="mailto:lydia_art@yahoo.com">Email</a><br>

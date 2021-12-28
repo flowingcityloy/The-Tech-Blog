@@ -15,13 +15,13 @@ router.get('/', withAuth, (req, res) => {
             'id',
             'contents',
             'title',
-            'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id'), 'vote_count']
+            'createdAt'
+        
         ],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -49,13 +49,13 @@ router.get('/edit/:id', withAuth, (req, res) => {
             'id',
             'contents',
             'title',
-            'created_at',
-            [sequelize.literal('SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id'), 'vote_count']
+            'createdAt'
+           
         ],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -73,7 +73,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
 
             res.render('edit-post', {
                 post,
-                loggiedIn: true
+                loggedIn: true
             });
         } else {
             res.status(404).end();
